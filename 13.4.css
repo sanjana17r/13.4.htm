@@ -1,0 +1,73 @@
+
+body
+{
+    margin: 0px; /*unnecessary spacings are removed*/
+}
+header
+{
+    display: flex; /*flex layout*/
+    flex-wrap: nowrap;
+    width: 100%; /*header is stretched*/
+    height: 100%;
+}
+#div1 
+{
+    background: lightgrey;/*background is set to light grey*/
+    text-align: center;
+    margin: 1vw; /*margin is 1vw*/
+    width: 33vw; /*width is 33vw*/
+    height: 100vw;/*height is 100vw*/
+    font-size: 5vw;/*font size is 5vw*/
+}
+#as2
+{
+    padding: 1vw; /*padding is 1vw*/
+    font-size: 1.4vw;/*font size is 1.4vw*/
+    margin: 1vw; /*margin is 1vw*/
+}
+#div2
+{
+    background: grey;
+   /*background is set to grey*/
+    text-align: left;
+     /*internal spacing is 3vw*/
+    padding: 3vw;/*padding is 3vw*/
+    color: white;
+    height: 19vw;
+    font-size: 1.2vw;/*font size is 1.2vw*/
+}
+#div3
+{
+    background: lightgrey;
+   /*background is set to lightgrey*/
+    text-align: center;
+     /* text is centre aligned*/
+    
+    height: 14.6vw;
+}
+#div4
+{
+    background: grey;
+   /*background is set to grey*/
+    text-align: left;
+     /*text is left aligned*/
+    color: white;
+    height: 2vw;
+    font-size: 1.4vw;/*font size is 1.4vw*/
+}
+h2
+{
+    height: 5.8vw;
+    border-bottom: 0.3vw solid grey;/*border at the bottom is 1vw*/
+    padding-bottom: 0.5vw;/*padding at the bottom is 1vw*/
+    font-size: 1.8vw;/*font size is 1.8vw*/
+}
+#div5
+{
+    text-align: left;/*text is left aligned*/
+    font-size: 1.4vw;/*font size is 1.4vw*/
+    border: 1vw;/*border is 1vw*/
+}
+
+
+

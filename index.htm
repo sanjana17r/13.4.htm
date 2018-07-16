@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="external stylesheet" href="13.4.css">
+</head>
+<body>
+    <header><!--html layout is created with given information,as shown,each of the divs have corresponding ids having differents properties-->
+        <div id="div1">
+            <div id="div2">
+                <h1 id="name">SNEHA SPANDANA</h1>
+                SOFTWARE ENGINEER.<br/>
+                As someone who can identify the need of a customer for effective solutions. 
+                I am committed to high quality service that ensures a positive experience.
+            </div>
+            <div id="div3">
+                
+            </div>
+            <div id="div4"><h5>PERSONALITY HIGHLIGHTS</h5></div>
+        <div id="div5"><ul><!--list is created-->
+                <li>Cheerful disposition</li>
+                <li>Neat and well organised</li>
+                <li>Motivated by problem solving</li>
+                <li>Independent worker</li>
+                <li>works well with dead line</li>
+                <li>Collaborative and efficient</li>
+            </ul></div>
+            <div id="div4"><h5>CONTACT DETAILS</h5></div>
+        <div id="div5"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br/>Lorem Ipsum is simply dummy text of the printing<br/>Lorem Ipsum is simply dummy text of the printing<br/><br/>
+            
+        </div>
+
+    </div>
+        
+    
+            <aside id="as2">
+            <div>
+                <h2>BASIC</br>INFORMATION</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                <br/><br/><br/>
+            </div>
+            <div>
+                <h2>EDUCATION</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/> 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br/>
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/><br/>
+            </div>
+            <div>
+                <h2>PROFESSIONAL EXPERIENCE</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/> 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br/> 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/><br/>
+            </div>
+            <button type="button" onclick="loadDoc()">Get Portfolio</button><!--button is created on clicking which,load doc function is invoked-->
+            <div id="ld"></div><!--inside this div,json data is displayed-->
+            </aside>
+        </header>    
+         <div id="ld"></div>
+         <script type="text/javascript">
+                function loadDoc() {//function is invoke when button is clicked
+                  var xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                      var snehaData = JSON.parse(xhttp.responseText); //the json data is stored in the variable snehaData
+                      document.getElementById("ld").innerHTML = snehaData;//the div having class'id' is to have json data in it
+                    }
+                  };
+                  xhttp.open("GET", "data.json", true);
+                  xhttp.send();
+                
+            }
+                </script>
+    
+</body>
+</html>
